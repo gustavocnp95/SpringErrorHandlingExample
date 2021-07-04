@@ -6,7 +6,6 @@ import lombok.Data;
 import org.jetbrains.annotations.NotNull;
 
 @Builder(toBuilder = true, setterPrefix = "with")
-@AllArgsConstructor
 @Data
 public final class ApiError {
     private final int statusCode;
