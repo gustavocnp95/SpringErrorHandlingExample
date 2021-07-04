@@ -11,7 +11,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 public final class ApiExceptionHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler(ExampleErrorException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ApiError handleUsuarioSemPermissaoException(@NotNull final ExampleErrorException exception) {
+    public ApiError handleExampleErrorException(@NotNull final ExampleErrorException exception) {
         return createException(exception, HttpStatus.BAD_REQUEST.value());
     }
 
