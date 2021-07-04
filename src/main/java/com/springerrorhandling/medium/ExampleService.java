@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class ExampleService {
     public boolean exampleMethod() {
-        throw new ExampleErrorException("An example error ocurred when processed the request.");
+        throw new ExampleErrorException("An example error occurred when processing the request.");
     }
 }
