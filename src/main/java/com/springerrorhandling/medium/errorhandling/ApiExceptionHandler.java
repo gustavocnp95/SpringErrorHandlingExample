@@ -15,6 +15,7 @@ public final class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         return createException(exception, HttpStatus.BAD_REQUEST.value());
     }
 
+    @NotNull
     private ApiError createException(@NotNull final Throwable exception, final int statusCode) {
         return ApiError.builder()
                 .withMessage(exception.getMessage())
