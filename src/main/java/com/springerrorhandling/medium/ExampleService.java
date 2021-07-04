@@ -1,10 +1,11 @@
 package com.springerrorhandling.medium;
 
+import com.springerrorhandling.medium.errorhandling.ExampleErrorException;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ExampleService {
     public boolean exampleMethod() {
-        throw new RuntimeException("teste");
+        throw new ExampleErrorException("An example error ocurred when processed the request.");
     }
 }
